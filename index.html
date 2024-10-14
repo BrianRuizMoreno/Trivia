@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Conocimiento General</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz de Conocimiento General</h1>
+        <div id="startScreen" class="start-screen">
+            <input type="text" id="playerName" placeholder="Ingresa tu nombre">
+            <button id="startButton">Comenzar Juego</button>
+        </div>
+        <div id="questionScreen" class="question-screen">
+            <h2 id="question"></h2>
+            <div id="options" class="options"></div>
+            <div class="info">
+                <span id="timer"></span>
+                <span id="score"></span>
+            </div>
+            <button id="nextButton">Siguiente Pregunta</button>
+        </div>
+        <div id="endScreen" class="end-screen">
+            <h2>¡Juego terminado!</h2>
+            <p id="finalScore"></p>
+            <table id="leaderboard">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Puntuación</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button id="playAgainButton">Jugar de Nuevo</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
